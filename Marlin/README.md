@@ -6,3 +6,4 @@ Anycubic I3 Mega Repro with old 8-Bit Mainboard
 - E3D Volcano Hotend Bowden
 - 0.8 Brass Nozzle
 - Marlin 2.0.61
+- Preheat PLA: 195° Nozzle, 60° Bed
