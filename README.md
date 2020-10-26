@@ -7,3 +7,5 @@ Anycubic I3 Mega Repro with old 8-Bit Mainboard
 - 0.8 Brass Nozzle
 - Marlin 2.0.61
 - Preheat PLA: 195° Nozzle, 60° Bed
+
+NOTE: Slicing Times 1 Hour off
