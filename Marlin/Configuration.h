@@ -72,7 +72,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "MartinHeld" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "Sirius-3R" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -430,16 +430,16 @@
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
 #define TEMP_SENSOR_0 5
-#define TEMP_SENSOR_1 0
-#define TEMP_SENSOR_2 0
-#define TEMP_SENSOR_3 0
-#define TEMP_SENSOR_4 0
-#define TEMP_SENSOR_5 0
-#define TEMP_SENSOR_6 0
-#define TEMP_SENSOR_7 0
+//#define TEMP_SENSOR_1 0
+//#define TEMP_SENSOR_2 0
+//#define TEMP_SENSOR_3 0
+//#define TEMP_SENSOR_4 0
+//#define TEMP_SENSOR_5 0
+//#define TEMP_SENSOR_6 0
+//#define TEMP_SENSOR_7 0
 #define TEMP_SENSOR_BED 1
-#define TEMP_SENSOR_PROBE 0
-#define TEMP_SENSOR_CHAMBER 0
+//#define TEMP_SENSOR_PROBE 0
+//#define TEMP_SENSOR_CHAMBER 0
 
 // Dummy thermistor constant temperature readings, for use with 998 and 999
 #define DUMMY_THERMISTOR_998_VALUE 25
@@ -461,26 +461,26 @@
 // Below this temperature the heater will be switched off
 // because it probably indicates a broken thermistor wire.
 #define HEATER_0_MINTEMP   5
-#define HEATER_1_MINTEMP   5
-#define HEATER_2_MINTEMP   5
-#define HEATER_3_MINTEMP   5
-#define HEATER_4_MINTEMP   5
-#define HEATER_5_MINTEMP   5
-#define HEATER_6_MINTEMP   5
-#define HEATER_7_MINTEMP   5
+//#define HEATER_1_MINTEMP   5
+//#define HEATER_2_MINTEMP   5
+//#define HEATER_3_MINTEMP   5
+//#define HEATER_4_MINTEMP   5
+//#define HEATER_5_MINTEMP   5
+//#define HEATER_6_MINTEMP   5
+//#define HEATER_7_MINTEMP   5
 #define BED_MINTEMP        5
 
 // Above this temperature the heater will be switched off.
 // This can protect components from overheating, but NOT from shorts and failures.
 // (Use MINTEMP for thermistor short/failure protection.)
 #define HEATER_0_MAXTEMP 285
-#define HEATER_1_MAXTEMP 275
-#define HEATER_2_MAXTEMP 275
-#define HEATER_3_MAXTEMP 275
-#define HEATER_4_MAXTEMP 275
-#define HEATER_5_MAXTEMP 275
-#define HEATER_6_MAXTEMP 275
-#define HEATER_7_MAXTEMP 275
+//#define HEATER_1_MAXTEMP 275
+//#define HEATER_2_MAXTEMP 275
+//#define HEATER_3_MAXTEMP 275
+//#define HEATER_4_MAXTEMP 275
+//#define HEATER_5_MAXTEMP 275
+//#define HEATER_6_MAXTEMP 275
+//#define HEATER_7_MAXTEMP 275
 #define BED_MAXTEMP      135
 
 //===========================================================================
@@ -514,10 +514,12 @@
   //#define DEFAULT_Ki 4.52
   //#define DEFAULT_Kd 93.36
 
-  // Anycubic i3 Mega E3D Volcano hotend, 40W heater cartridge
-  #define DEFAULT_Kp 41.07
-  #define DEFAULT_Ki 4.52
-  #define DEFAULT_Kd 93.36
+  // Anycubic i3 Mega E3D Volcano Hot End, 40W heater cartridge
+  // 195°, Hot End Cooler 78%, 8 Cycles PLA
+  #define DEFAULT_Kp 32.39
+  #define DEFAULT_Ki 2.87
+  #define DEFAULT_Kd 91.55
+
   // Ultimaker
   //#define DEFAULT_Kp 22.2
   //#define DEFAULT_Ki 1.08
@@ -606,14 +608,14 @@
  * *** IT IS HIGHLY RECOMMENDED TO LEAVE THIS OPTION ENABLED! ***
  */
 #define PREVENT_COLD_EXTRUSION
-#define EXTRUDE_MINTEMP 190
+#define EXTRUDE_MINTEMP 192
 
 /**
  * Prevent a single extrusion longer than EXTRUDE_MAXLENGTH.
  * Note: For Bowden Extruders make this large enough to allow load/unload.
  */
 #define PREVENT_LENGTHY_EXTRUDE
-#define EXTRUDE_MAXLENGTH 600
+#define EXTRUDE_MAXLENGTH 1200
 
 //===========================================================================
 //======================== Thermal Runaway Protection =======================
@@ -784,7 +786,7 @@
  *                                      X, Y, Z, E0 [, E1[, E2...]]
  */
 //#define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 800, 193.14 }
-// Titan
+// Titan Extruder
 #define DEFAULT_AXIS_STEPS_PER_UNIT   { 160, 160, 800, 780 }
 
 /**
@@ -1143,13 +1145,13 @@
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
 #define INVERT_E0_DIR false // set to false for stock drivers or TMC2208 with reversed connectors
-#define INVERT_E1_DIR false // set to false for stock drivers or TMC2208 with reversed connectors
-#define INVERT_E2_DIR false
-#define INVERT_E3_DIR false
-#define INVERT_E4_DIR false
-#define INVERT_E5_DIR false
-#define INVERT_E6_DIR false
-#define INVERT_E7_DIR false
+//#define INVERT_E1_DIR false // set to false for stock drivers or TMC2208 with reversed connectors
+//#define INVERT_E2_DIR false
+//#define INVERT_E3_DIR false
+//#define INVERT_E4_DIR false
+//#define INVERT_E5_DIR false
+//#define INVERT_E6_DIR false
+//#define INVERT_E7_DIR false
 
 // @section homing
 
