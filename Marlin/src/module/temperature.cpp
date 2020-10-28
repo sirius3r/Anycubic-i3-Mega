@@ -509,11 +509,17 @@ volatile bool Temperature::raw_temps_ready = false;
                   SERIAL_ECHOLNPAIR(STR_KP, tune_pid.Kp, STR_KI, tune_pid.Ki, STR_KD, tune_pid.Kd);
                 }
                 else {
-                  tune_pid.Kp = Ku * pf;
+                  /**
+				  tune_pid.Kp = Ku * pf;
                   tune_pid.Kd = tune_pid.Kp * Tu * df;
                   tune_pid.Ki = 2 * tune_pid.Kp / Tu;
                   SERIAL_ECHOLNPGM("\n" STR_CLASSIC_PID);
                   SERIAL_ECHOLNPAIR(STR_KP, tune_pid.Kp, STR_KI, tune_pid.Ki, STR_KD, tune_pid.Kd);
+				  */
+				  tune_pid.Kp = 0.2 * Ku;
+                  tune_pid.Ki = 2 * tune_pid.Kp / Tu;
+                  tune_pid.Kd = tune_pid.Kp * Tu / 3;
+                  SERIAL_ECHOPAIR(" Kp: ", tune_pid.Kp, " Ki: ", tune_pid.Ki, " Kd: ", tune_pid.Kd);
                 }
 
                 /**

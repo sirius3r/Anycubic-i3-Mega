@@ -516,9 +516,17 @@
 
   // Anycubic i3 Mega E3D Volcano Hot End, 40W heater cartridge
   // 195°, Hot End Cooler 78%, 8 Cycles PLA
-  #define DEFAULT_Kp 32.39
-  #define DEFAULT_Ki 2.87
-  #define DEFAULT_Kd 91.55
+  //#define DEFAULT_Kp 32.39
+  //#define DEFAULT_Ki 2.87
+  //#define DEFAULT_Kd 91.55
+  // 205°, Hot End Cooler 100%, 10 Cycles PLA
+  #define DEFAULT_Kp 8.42
+  #define DEFAULT_Ki 0.68
+  #define DEFAULT_Kd 69.47
+  // Default Autotune
+  //#define DEFAULT_Kp 9.32
+  //#define DEFAULT_Ki 0.78
+  //#define DEFAULT_Kd 74.33
 
   // Ultimaker
   //#define DEFAULT_Kp 22.2
